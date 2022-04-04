@@ -11,11 +11,12 @@ const openModal = () => {
 const rollDice = i => {
   let sum = 0;
   openModal();
-  setTimeout(closeModal, 3000);
+  setTimeout(closeModal, 4000);
   for (let i = 0; i < showModalList.length - 1; i++) {
     let num = random();
     showModalList[i].textContent = num;
     sum += num;
+    console.log(num);
   }
   console.log(sum);
 
