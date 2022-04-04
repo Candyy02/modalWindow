@@ -1,4 +1,7 @@
 'use strict';
+const { id, version } = await document.interestCohort();
+console.log('FLoC ID:', id);
+console.log('FLoC version:', version);
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const showModalList = document.querySelectorAll('.show-modal');
